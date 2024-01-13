@@ -1,0 +1,51 @@
+		<form action="files/sendmail/sendmail.php" data-goto-error method="POST" class="form__blank">
+			<div class="form__content">
+				<div class="form__data">
+					<div class="form__lable">Personal Data</div>
+					<ul class="form__list">
+						<li class="form__item">
+							<input data-no-validate autocomplete="off" type="text" name="form[name]" placeholder="Name" class="input">
+						</li>
+						<li class="form__item">
+							<input data-required="email" autocomplete="off" type="text" name="form[email]" data-error="Error" placeholder="E-mail" class="input">
+						</li>
+						<li class="form__item">
+							<input data-required="phone" autocomplete="off" type="text" name="form[phone]" data-error="Error" placeholder="Phone" class="input">
+						</li>
+					</ul>
+				</div>
+				<div class="form__details">
+					<div class="form__lable">Moving Details</div>
+					<ul class="form__list" data-one-select>
+						<li class="form__item">
+							<input data-required autocomplete="off" type="text" name="form[fromaddress]" data-error="The field is required." placeholder="Moving From Address" class="input">
+						</li>
+						<li class="form__item">
+							<input data-required autocomplete="off" type="text" name="form[toaddress]" data-error="The field is required." placeholder="Moving To Address" class="input">
+						</li>
+						<li class="form__item">
+							<select name="form[]" data-class-modif="form" data-search>
+								<option value="" selected>Type of Move</option>
+								<option value="1">Studio Apartment</option>
+								<option value="2">1 Bedroom Apartment</option>
+								<option value="3">2 Bedroom Apartment</option>
+								<option value="4">3 Bedroom Apartment</option>
+								<option value="5">1 Bedroom House</option>
+								<option value="6">2 Bedroom House</option>
+								<option value="7">3 Bedroom House</option>
+								<option value="8">4 Bedroom House</option>
+								<option value="9">5 Bedroom House</option>
+								<option value="10">Office</option>
+								<option value="11">Delivery</option>
+								<option value="12">Other</option>
+							</select>
+						</li>
+						<li class="form__item">
+							<input data-datepicker autocomplete="off" type="text" name="form[]" data-error="" placeholder="Select Date of Move" class="input">
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<button type="submit" class="form__button button">GET A FREE QUOTE</button>
+		</form>
